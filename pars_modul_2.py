@@ -6,7 +6,7 @@ headers = {
 url = 'https://glamgo.store/gonefludd/tproduct/237654106-747909980751-futbolka-digital-fantazy'
 
 def chars_item_to_url():
-
+    
     response = requests.get(url, headers=headers)
     soup = BeautifulSoup(response.text, 'lxml')
     name = soup.find_all('div', class_ = 't-store__prod-popup__title-wrapper')
