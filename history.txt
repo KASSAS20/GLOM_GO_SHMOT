@@ -1,6 +1,9 @@
 17.09.23:
-    -Добавлена фунция pars_url_artist (KASSAS20)
+    -Добавлена функция pars_url_artist (KASSAS20)
     -Добавлена функция pars_from_card_product(Firty28)
-    -Добавил функцию get_soup(KASSAS20)
-    -Добавил функцию get_soup_from_selenium(KASSAS20)
-    -Добавил функцию pars_url_product(KASSAS20)
+    -Добавлена функция get_soup(KASSAS20)
+    -Добавлена функция get_soup_from_selenium(KASSAS20)
+    -Добавлена функция pars_url_product(KASSAS20)
+18.09.23:
+    -Пофикшена функция pars_url_product(KASSAS20)
+    -Добавлена функция pars_url_img(KASSAS20)

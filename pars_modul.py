@@ -4,7 +4,7 @@ import selenium
 from selenium import webdriver
 from selenium.webdriver.firefox.options import Options
 from selenium.webdriver.support.ui import WebDriverWait
-
+from selenium.webdriver.support import expected_conditions as EC
 
 def get_soup(url):  # получение html страницы через requests
     headers = {
@@ -22,6 +22,7 @@ def get_soup_from_selenium(url):  # получение html страницы ч�
     driver = webdriver.Firefox(options=option)
     wait = WebDriverWait(driver, 10)
     driver.get(url)
+    wait.until(EC.presence_of_element_located(('css selector', '#nav238128853 > div.t830__panel.t830__panel_bg.t830__panel_hover.t830__panel_open > div.t830__menu__content > div.t830__burger.t830__burger_mobile')))
     html = driver.page_source
     soup = bs(html, 'lxml')
     driver.quit()
@@ -40,20 +41,21 @@ def pars_url_arists(soup):  # извлекает ссылки на артист�
     return result
 
 
-# сбор наименований и ссылок на товары с карточки артиста
-def pars_url_product(dict_artist_url):
+
+def pars_url_product(dict_artist_url):# сбор наименований и ссылок на товары с карточки артиста
     dict_position = {}
     for artist in dict_artist_url:
         url = f'https://glamgo.store{dict_artist_url[artist]}'
         soup = get_soup_from_selenium(url)
         html_position = soup.find_all(
             'div', class_="js-product t-store__card t-col t-col_4 t-align_center t-item")
+        dict_position[artist] = {}
         for position in html_position:
 
             name = position.find(
                 'div', class_="js-store-prod-name js-product-name t-store__card__title t-typography__title t-name t-name_md").text.strip()
             href = position.find('a').get('href')
-            dict_position[artist] = {name: href}
+            dict_position[artist][name] = href
         if html_position == []:
             dict_position[artist] = {None: None}
 
@@ -89,3 +91,30 @@ def pars_from_card_product(url):  # сбор информации со стра�
         'application_back': application_back,
     }
     return chars_name
+
+def pars_url_img(dict_position):#парс ссылки на главную картинку карточек товаров
+    dict_img = {}
+    for artist in dict_position:
+        dict_img[artist] = {}
+        for product in dict_position[artist]:
+            if product != None:
+                # print(dict_position[artist])
+                print(artist, product)
+                soup = get_soup_from_selenium(dict_position[artist][product])
+                try:
+                    href = soup.find(
+                    'div', class_='t-slds__bgimg t-bgimg js-product-img loaded').get('data-original')
+                except AttributeError:
+                    href = soup.find(
+                        'meta', itemprop='image').get('content')
+                dict_img[artist][product] = href
+            else:
+                dict_img[artist] = {None: None}
+                
+    return dict_img
+                
+            
+            
+        
+    
+
