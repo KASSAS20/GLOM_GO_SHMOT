@@ -1,0 +1,465 @@
+1694964782898	geckodriver	INFO	Listening on 127.0.0.1:56421
+1694964783396	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/hom ... te" "--remote-debugging-port" "53887" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileYMySTt"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+[GFX1-]: vaapitest: ERROR
+[GFX1-]: vaapitest: VA-API test failed: failed to initialise VAAPI connection.
+
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1694964783913	Marionette	INFO	Marionette enabled
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1694964784011	Marionette	INFO	Listening on port 37991
+WebDriver BiDi listening on ws://127.0.0.1:53887
+Read port: 37991
+1694964784177	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+DevTools listening on ws://127.0.0.1:53887/devtools/browser/3664e57f-4f02-43cd-a565-bfc833e91ff8
+1694964788063	Marionette	INFO	Stopped listening on port 37991
+1694964859152	geckodriver	INFO	Listening on 127.0.0.1:33567
+1694964859657	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/hom ... ss" "--remote-debugging-port" "41965" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilewptgPw"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+[GFX1-]: vaapitest: ERROR
+[GFX1-]: vaapitest: VA-API test failed: failed to initialise VAAPI connection.
+
+1694964859969	Marionette	INFO	Marionette enabled
+1694964860020	Marionette	INFO	Listening on port 43447
+WebDriver BiDi listening on ws://127.0.0.1:41965
+Read port: 43447
+1694964860183	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:41965/devtools/browser/9734c977-1efb-4255-ae32-6a8a95676a49
+1694965006486	geckodriver	INFO	Listening on 127.0.0.1:55647
+1694965006991	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/hom ... ss" "--remote-debugging-port" "34437" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilezyjek5"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+[GFX1-]: vaapitest: ERROR
+[GFX1-]: vaapitest: VA-API test failed: failed to initialise VAAPI connection.
+
+1694965007297	Marionette	INFO	Marionette enabled
+1694965007349	Marionette	INFO	Listening on port 46497
+WebDriver BiDi listening on ws://127.0.0.1:34437
+Read port: 46497
+1694965007500	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:34437/devtools/browser/7d59ebd1-43dd-4931-80d0-b07638232363
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1694965061402	geckodriver	INFO	Listening on 127.0.0.1:36555
+1694965061907	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/hom ... ss" "--remote-debugging-port" "38585" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofile1s7pae"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+[GFX1-]: vaapitest: ERROR
+[GFX1-]: vaapitest: VA-API test failed: failed to initialise VAAPI connection.
+
+1694965062199	Marionette	INFO	Marionette enabled
+1694965062252	Marionette	INFO	Listening on port 41563
+WebDriver BiDi listening on ws://127.0.0.1:38585
+Read port: 41563
+1694965062410	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:38585/devtools/browser/4b93821e-64d7-4f5c-88a1-8498ede7852b
+1694965070811	Marionette	INFO	Stopped listening on port 41563
+JavaScript warning: https://mc.yandex.ru/metrika/tag.js, line 136: Script terminated by timeout at:
+B/<@https://mc.yandex.ru/metrika/tag.js:136:66
+
+1694965096760	geckodriver	INFO	Listening on 127.0.0.1:60999
+1694965097265	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/hom ... ss" "--remote-debugging-port" "53981" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileT0sRHu"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+[GFX1-]: vaapitest: ERROR
+[GFX1-]: vaapitest: VA-API test failed: failed to initialise VAAPI connection.
+
+1694965097557	Marionette	INFO	Marionette enabled
+1694965097610	Marionette	INFO	Listening on port 39023
+WebDriver BiDi listening on ws://127.0.0.1:53981
+Read port: 39023
+1694965097771	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:53981/devtools/browser/17880d24-c4da-476e-8dd8-c58b0c6641e5
+1694965159676	geckodriver	INFO	Listening on 127.0.0.1:37931
+1694965159678	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/hom ... ss" "--remote-debugging-port" "49449" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilepCFDhL"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+[GFX1-]: vaapitest: ERROR
+[GFX1-]: vaapitest: VA-API test failed: failed to initialise VAAPI connection.
+
+1694965159986	Marionette	INFO	Marionette enabled
+1694965160037	Marionette	INFO	Listening on port 34349
+WebDriver BiDi listening on ws://127.0.0.1:49449
+Read port: 34349
+1694965160191	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:49449/devtools/browser/b76de6f7-6661-427b-80d1-01e44f85126f
+1694965165070	geckodriver	INFO	Listening on 127.0.0.1:43829
+1694965165073	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/hom ... ss" "--remote-debugging-port" "36539" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileM8zrgI"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+[GFX1-]: vaapitest: ERROR
+[GFX1-]: vaapitest: VA-API test failed: failed to initialise VAAPI connection.
+
+1694965165390	Marionette	INFO	Marionette enabled
+1694965165446	Marionette	INFO	Listening on port 34483
+WebDriver BiDi listening on ws://127.0.0.1:36539
+Read port: 34483
+1694965165642	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:36539/devtools/browser/572891d8-2809-44c0-9c12-245403775c88
+1694965261325	geckodriver	INFO	Listening on 127.0.0.1:46005
+1694965261328	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/hom ... ss" "--remote-debugging-port" "34563" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofile2JX7vE"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+[GFX1-]: vaapitest: ERROR
+[GFX1-]: vaapitest: VA-API test failed: failed to initialise VAAPI connection.
+
+1694965261640	Marionette	INFO	Marionette enabled
+1694965261694	Marionette	INFO	Listening on port 36017
+WebDriver BiDi listening on ws://127.0.0.1:34563
+Read port: 36017
+1694965261865	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:34563/devtools/browser/ccab61d3-3d1c-41cd-8ff1-c013c8bab085
+1694965283073	geckodriver	INFO	Listening on 127.0.0.1:56907
+1694965283075	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/hom ... ss" "--remote-debugging-port" "51715" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilepjsoRK"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+[GFX1-]: vaapitest: ERROR
+[GFX1-]: vaapitest: VA-API test failed: failed to initialise VAAPI connection.
+
+1694965283355	Marionette	INFO	Marionette enabled
+1694965283406	Marionette	INFO	Listening on port 39781
+WebDriver BiDi listening on ws://127.0.0.1:51715
+Read port: 39781
+1694965283569	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:51715/devtools/browser/e1b2a57d-98dd-46e9-9907-6e7043d200e5
+1694965288113	Marionette	INFO	Stopped listening on port 39781
+JavaScript warning: https://mc.yandex.ru/metrika/tag.js, line 136: Script terminated by timeout at:
+B/<@https://mc.yandex.ru/metrika/tag.js:136:66
+
+1694965309560	geckodriver	INFO	Listening on 127.0.0.1:38273
+1694965310064	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/hom ... ss" "--remote-debugging-port" "53625" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofile8TioTx"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+[GFX1-]: vaapitest: ERROR
+[GFX1-]: vaapitest: VA-API test failed: failed to initialise VAAPI connection.
+
+1694965310364	Marionette	INFO	Marionette enabled
+1694965310417	Marionette	INFO	Listening on port 35347
+WebDriver BiDi listening on ws://127.0.0.1:53625
+Read port: 35347
+1694965310572	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:53625/devtools/browser/8dff60d1-0d9b-4e6f-84d9-6c3e2e41469c
+1694965314251	Marionette	INFO	Stopped listening on port 35347
+JavaScript warning: https://connect.facebook.net/en_US/fbevents.js, line 25: Script terminated by timeout at:
+Ia@https://connect.facebook.net/en_US/fbevents.js:25:51859
+P@https://connect.facebook.net/en_US/fbevents.js:25:51884
+C@https://connect.facebook.net/signals/config/681268392518207?v=2.9.127&r=stable&domain=glamgo.store:26:68295
+D@https://connect.facebook.net/signals/config/681268392518207?v=2.9.127&r=stable&domain=glamgo.store:26:68651
+e.exports</</<@https://connect.facebook.net/signals/config/681268392518207?v=2.9.127&r=stable&domain=glamgo.store:26:69713
+
+1694965325689	geckodriver	INFO	Listening on 127.0.0.1:43909
+1694965326194	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/hom ... ss" "--remote-debugging-port" "41721" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofile9QPAox"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+[GFX1-]: vaapitest: ERROR
+[GFX1-]: vaapitest: VA-API test failed: failed to initialise VAAPI connection.
+
+1694965326502	Marionette	INFO	Marionette enabled
+1694965326553	Marionette	INFO	Listening on port 42507
+WebDriver BiDi listening on ws://127.0.0.1:41721
+Read port: 42507
+1694965326719	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:41721/devtools/browser/10c6f7df-1bc5-4480-9619-71db0b51174b
+1694965331053	Marionette	INFO	Stopped listening on port 42507
+JavaScript warning: https://connect.facebook.net/en_US/fbevents.js, line 24: Script terminated by timeout at:
+value@https://connect.facebook.net/en_US/fbevents.js:24:90754
+value@https://connect.facebook.net/en_US/fbevents.js:24:91024
+g@https://connect.facebook.net/en_US/fbevents.js:24:71708
+B@https://connect.facebook.net/en_US/fbevents.js:24:69366
+value@https://connect.facebook.net/en_US/fbevents.js:24:32781
+value@https://connect.facebook.net/en_US/fbevents.js:24:31499
+value@https://connect.facebook.net/en_US/fbevents.js:24:31049
+D@https://connect.facebook.net/signals/config/681268392518207?v=2.9.127&r=stable&domain=glamgo.store:26:69062
+e.exports</</<@https://connect.facebook.net/signals/config/681268392518207?v=2.9.127&r=stable&domain=glamgo.store:26:69713
+
+1694965424501	geckodriver	INFO	Listening on 127.0.0.1:46443
+1694965425006	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/hom ... ss" "--remote-debugging-port" "34245" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilezHK70P"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+[GFX1-]: vaapitest: ERROR
+[GFX1-]: vaapitest: VA-API test failed: failed to initialise VAAPI connection.
+
+1694965425321	Marionette	INFO	Marionette enabled
+1694965425372	Marionette	INFO	Listening on port 35543
+WebDriver BiDi listening on ws://127.0.0.1:34245
+Read port: 35543
+1694965425525	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:34245/devtools/browser/40b35f50-2cc4-46a1-8584-35a13287595e
+1694965450353	geckodriver	INFO	Listening on 127.0.0.1:60405
+1694965450864	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/hom ... ss" "--remote-debugging-port" "50547" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilem1oSKH"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+[GFX1-]: vaapitest: ERROR
+[GFX1-]: vaapitest: VA-API test failed: failed to initialise VAAPI connection.
+
+1694965451225	Marionette	INFO	Marionette enabled
+1694965451280	Marionette	INFO	Listening on port 44191
+WebDriver BiDi listening on ws://127.0.0.1:50547
+Read port: 44191
+1694965451459	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:50547/devtools/browser/8397c9a3-5a28-417e-a98d-a181ac65791c
+1694965468558	geckodriver	INFO	Listening on 127.0.0.1:42057
+1694965468560	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/hom ... ss" "--remote-debugging-port" "39435" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileTsYTlW"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+[GFX1-]: vaapitest: ERROR
+[GFX1-]: vaapitest: VA-API test failed: failed to initialise VAAPI connection.
+
+1694965468896	Marionette	INFO	Marionette enabled
+1694965468952	Marionette	INFO	Listening on port 45523
+Read port: 45523
+WebDriver BiDi listening on ws://127.0.0.1:39435
+1694965469010	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:39435/devtools/browser/5fcdf5b6-bf3a-4735-90b6-f676abe3fd18
+1694965473847	geckodriver	INFO	Listening on 127.0.0.1:49147
+1694965473849	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/hom ... ss" "--remote-debugging-port" "40763" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileJpPouv"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+[GFX1-]: vaapitest: ERROR
+[GFX1-]: vaapitest: VA-API test failed: failed to initialise VAAPI connection.
+
+1694965474190	Marionette	INFO	Marionette enabled
+1694965474243	Marionette	INFO	Listening on port 34485
+WebDriver BiDi listening on ws://127.0.0.1:40763
+Read port: 34485
+1694965474300	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:40763/devtools/browser/8b2fae5e-16db-4948-961f-9de6ab4ce299
+1694965499746	geckodriver	INFO	Listening on 127.0.0.1:39501
+1694965499748	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/hom ... ss" "--remote-debugging-port" "36615" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileX4v0hs"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+[GFX1-]: vaapitest: ERROR
+[GFX1-]: vaapitest: VA-API test failed: failed to initialise VAAPI connection.
+
+1694965500093	Marionette	INFO	Marionette enabled
+1694965500149	Marionette	INFO	Listening on port 34281
+WebDriver BiDi listening on ws://127.0.0.1:36615
+Read port: 34281
+1694965500337	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:36615/devtools/browser/c16f55f8-481b-4333-8887-54ca71626b28
+1694965502705	geckodriver	INFO	Listening on 127.0.0.1:51945
+1694965502709	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/hom ... ss" "--remote-debugging-port" "40153" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilez9VwxT"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+[GFX1-]: vaapitest: ERROR
+[GFX1-]: vaapitest: VA-API test failed: failed to initialise VAAPI connection.
+
+1694965503030	Marionette	INFO	Marionette enabled
+1694965503090	Marionette	INFO	Listening on port 43075
+WebDriver BiDi listening on ws://127.0.0.1:40153
+Read port: 43075
+1694965503228	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:40153/devtools/browser/198de52c-6511-4a3f-b742-2a8cf528d88b
+1694965543101	geckodriver	INFO	Listening on 127.0.0.1:58511
+1694965543604	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/hom ... ss" "--remote-debugging-port" "36123" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileNMrjPF"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+[GFX1-]: vaapitest: ERROR
+[GFX1-]: vaapitest: VA-API test failed: failed to initialise VAAPI connection.
+
+1694965544025	Marionette	INFO	Marionette enabled
+1694965544079	Marionette	INFO	Listening on port 42365
+WebDriver BiDi listening on ws://127.0.0.1:36123
+Read port: 42365
+1694965544251	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:36123/devtools/browser/7bad1e81-fa29-4a2f-beb2-384c540b6fff
+1694965597491	geckodriver	INFO	Listening on 127.0.0.1:54251
+1694965597994	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/hom ... ss" "--remote-debugging-port" "60111" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileSJWFcf"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+[GFX1-]: vaapitest: ERROR
+[GFX1-]: vaapitest: VA-API test failed: failed to initialise VAAPI connection.
+
+1694965598875	Marionette	INFO	Marionette enabled
+1694965598954	Marionette	INFO	Listening on port 38637
+WebDriver BiDi listening on ws://127.0.0.1:60111
+Read port: 38637
+1694965599151	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:60111/devtools/browser/a140ed05-83ed-47c0-8f9b-56eaed0f079e
+1694965608597	Marionette	INFO	Stopped listening on port 38637
+JavaScript warning: https://mc.yandex.ru/metrika/tag.js, line 136: Script terminated by timeout at:
+B/<@https://mc.yandex.ru/metrika/tag.js:136:66
+
+1694965623275	geckodriver	INFO	Listening on 127.0.0.1:38851
+1694965623779	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/hom ... ss" "--remote-debugging-port" "47391" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilevZsvmM"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+[GFX1-]: vaapitest: ERROR
+[GFX1-]: vaapitest: VA-API test failed: failed to initialise VAAPI connection.
+
+1694965624212	Marionette	INFO	Marionette enabled
+1694965624285	Marionette	INFO	Listening on port 35987
+Read port: 35987
+WebDriver BiDi listening on ws://127.0.0.1:47391
+1694965624335	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:47391/devtools/browser/522ff59c-968b-42bd-b6cb-2290286f5cc8
+1694965634160	Marionette	INFO	Stopped listening on port 35987
+JavaScript warning: https://mc.yandex.ru/metrika/tag.js, line 136: Script terminated by timeout at:
+B/<@https://mc.yandex.ru/metrika/tag.js:136:66
+
+1694965710632	geckodriver	INFO	Listening on 127.0.0.1:38921
+1694965711142	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/hom ... ss" "--remote-debugging-port" "37667" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileypzDRE"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+[GFX1-]: vaapitest: ERROR
+[GFX1-]: vaapitest: VA-API test failed: failed to initialise VAAPI connection.
+
+1694965711806	Marionette	INFO	Marionette enabled
+1694965711879	Marionette	INFO	Listening on port 44001
+WebDriver BiDi listening on ws://127.0.0.1:37667
+Read port: 44001
+1694965712060	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:37667/devtools/browser/2e3271d2-6fad-4f4c-9638-e478fd7c7fd0
+1694965719720	Marionette	INFO	Stopped listening on port 44001
+JavaScript warning: https://mc.yandex.ru/metrika/tag.js, line 136: Script terminated by timeout at:
+B/<@https://mc.yandex.ru/metrika/tag.js:136:66
+
+1694965881484	geckodriver	INFO	Listening on 127.0.0.1:50461
+1694965881989	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/hom ... ss" "--remote-debugging-port" "54873" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileitlcss"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+[GFX1-]: vaapitest: ERROR
+[GFX1-]: vaapitest: VA-API test failed: failed to initialise VAAPI connection.
+
+1694965882317	Marionette	INFO	Marionette enabled
+1694965882375	Marionette	INFO	Listening on port 38641
+WebDriver BiDi listening on ws://127.0.0.1:54873
+Read port: 38641
+1694965882527	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:54873/devtools/browser/f26da8aa-5cff-46f7-a327-5b9ab53dc146
+1694965888385	Marionette	INFO	Stopped listening on port 38641
+JavaScript warning: https://mc.yandex.ru/metrika/tag.js, line 136: Script terminated by timeout at:
+B/<@https://mc.yandex.ru/metrika/tag.js:136:66
+
+1694965951092	geckodriver	INFO	Listening on 127.0.0.1:60881
+1694965951592	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/hom ... ss" "--remote-debugging-port" "42955" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilet98Dju"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+[GFX1-]: vaapitest: ERROR
+[GFX1-]: vaapitest: VA-API test failed: failed to initialise VAAPI connection.
+
+1694965951964	Marionette	INFO	Marionette enabled
+1694965952017	Marionette	INFO	Listening on port 46735
+WebDriver BiDi listening on ws://127.0.0.1:42955
+Read port: 46735
+1694965952193	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:42955/devtools/browser/2377bb38-058f-4396-8241-ca307fbc68af
+1694965956408	Marionette	INFO	Stopped listening on port 46735
+JavaScript warning: https://mc.yandex.ru/metrika/tag.js, line 136: Script terminated by timeout at:
+B/<@https://mc.yandex.ru/metrika/tag.js:136:66
+
+1694965980451	geckodriver	INFO	Listening on 127.0.0.1:56773
+1694965980953	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/hom ... ss" "--remote-debugging-port" "40551" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileAnqeoU"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+[GFX1-]: vaapitest: ERROR
+[GFX1-]: vaapitest: VA-API test failed: failed to initialise VAAPI connection.
+
+1694965981475	Marionette	INFO	Marionette enabled
+1694965981538	Marionette	INFO	Listening on port 35961
+WebDriver BiDi listening on ws://127.0.0.1:40551
+Read port: 35961
+1694965981697	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:40551/devtools/browser/e4f73538-be9d-43d3-aea6-82596272ce8b
+1694965990107	Marionette	INFO	Stopped listening on port 35961
+JavaScript warning: https://mc.yandex.ru/metrika/tag.js, line 136: Script terminated by timeout at:
+B/<@https://mc.yandex.ru/metrika/tag.js:136:66
+
+1694966003223	geckodriver	INFO	Listening on 127.0.0.1:51137
+1694966003727	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/hom ... ss" "--remote-debugging-port" "57823" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilezonEOt"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+[GFX1-]: vaapitest: ERROR
+[GFX1-]: vaapitest: VA-API test failed: failed to initialise VAAPI connection.
+
+1694966004085	Marionette	INFO	Marionette enabled
+1694966004135	Marionette	INFO	Listening on port 33445
+Read port: 33445
+WebDriver BiDi listening on ws://127.0.0.1:57823
+1694966004183	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:57823/devtools/browser/69d0eb35-9a47-49a7-a955-003e805eb503
+1694966008629	Marionette	INFO	Stopped listening on port 33445
+JavaScript warning: https://mc.yandex.ru/metrika/tag.js, line 156: Script terminated by timeout at:
+n@https://mc.yandex.ru/metrika/tag.js:156:4
+wb/</<@https://mc.yandex.ru/metrika/tag.js:152:198
+x/<@https://mc.yandex.ru/metrika/tag.js:149:426
+

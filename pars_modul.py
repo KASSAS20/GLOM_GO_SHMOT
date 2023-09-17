@@ -1,11 +1,29 @@
 from bs4 import BeautifulSoup as bs
 import requests
+import selenium
+from selenium import webdriver
+from selenium.webdriver.firefox.options import Options
+from selenium.webdriver.support.ui import WebDriverWait
+
+
+option = webdriver.FirefoxOptions()
+option.add_argument("--headless")
+driver = webdriver.Firefox(options=option)
+wait = WebDriverWait(driver, 10)
+
 
 def get_soup(url):
     headers = {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36'}
     response = requests.get(url, headers=headers)
     soup = bs(response.text, 'lxml')
+    return soup
+
+def get_soup_from_selenium(url):
+    driver.get(url)
+    html = driver.page_source
+    soup = bs(html, 'lxml')
+    driver.quit()
     return soup
 
 def pars_url_arists(soup): #извлекает ссылки на артистов с главной страницы
@@ -19,13 +37,11 @@ def pars_url_arists(soup): #извлекает ссылки на артисто�
         result[name_artist] = url_card_artist
     return result
 
-def pars_url_product(dict_artist_url):
-    for artist in dict_artist_url:
-        url = f'https://glamgo.store{dict_artist_url[artist]}'
-        soup = get_soup(url)
+# def pars_url_product(dict_artist_url):
+#     for artist in dict_artist_url:
+#         url = f'https://glamgo.store{dict_artist_url[artist]}'
+#         soup = get_soup(url)
         
-        d = soup.select(
-            '#rec237654106 > div.t776 > div > div.js-store-grid-cont.t-store__grid-cont.t-container.t-store__grid-cont_mobile-grid > div:nth-child(1) > a > div.t-store__card__textwrapper > div.js-store-prod-name.js-product-name.t-store__card__title.t-typography__title.t-name.t-name_md')
-        # print(d)
-        for i in d:
-            print(i)
+#         d = soup.select(
+#             '#rec237654106 > div.t776 > div > div.js-store-grid-cont.t-store__grid-cont.t-container.t-store__grid-cont_mobile-grid > div:nth-child(1)')
+#         print(d)
