@@ -9,4 +9,3 @@ response = requests.get(url, headers=headers)
 soup = bs(response.text, 'lxml')
 
 
-pars_modul.pars_url_arists(soup)
