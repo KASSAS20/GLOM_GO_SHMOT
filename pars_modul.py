@@ -11,3 +11,7 @@ def pars_url_arists(soup): #извлекает ссылки на артисто�
             'a', class_="t-menusub__link-item t-name t-name_xs").get('href').strip()
         result[name_artist] = url_card_artist
     return result
+
+def pars_url_product(dict_artist_url):
+    for i in dict_artist_url:
+        print(i)

@@ -9,3 +9,5 @@ response = requests.get(url, headers=headers)
 soup = bs(response.text, 'lxml')
 
 
+dict_artist_url = pars_modul.pars_url_arists(soup)
+pars_modul.pars_url_product(dict_artist_url)
