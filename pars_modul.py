@@ -29,7 +29,8 @@ def get_soup_from_selenium(url):  # получение html страницы ч�
     return soup
 
 
-def pars_url_arists(soup):  # извлекает ссылки на артистов с главной страницы
+# извлекает ссылки на артистов с главной страницы
+def pars_url_arists(soup = get_soup("https://glamgo.store/")):
     result = {}
     html_list_info_artist = soup.find(
         'li', class_='t229__list_item').find_all('li', class_="t-menusub__list-item t-name t-name_xs")
