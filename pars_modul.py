@@ -75,13 +75,17 @@ def pars_from_card_product(url):  # сбор информации со стра�
 
     for i in price:
         price = i.text.strip()
-
     types = chars[0].text
     color = chars[1].text
     structure = chars[2].text
-    application_chest = chars[3].text
-    application_back = chars[4].text
-
+    try:
+        application_chest = chars[3].text
+        application_back = chars[4].text
+    except Exception as _ex:
+        print(_ex)
+        application_back = False
+        application_chest = False
+        
     chars_name = {
         "name": name,
         'price': price,
