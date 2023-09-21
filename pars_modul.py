@@ -65,6 +65,7 @@ def pars_url_product(dict_artist_url):# сбор наименований и с�
 
 def pars_from_card_product(url):  # сбор информации со страницы товара
     soup = get_soup(url)
+    # soup = get_soup('https://glamgo.store')
     name = soup.find_all('div', class_='t-store__prod-popup__title-wrapper')
     price = soup.find_all(
         'div', class_='js-product-price js-store-prod-price-val t-store__prod-popup__price-value')
@@ -80,11 +81,12 @@ def pars_from_card_product(url):  # сбор информации со стра�
     structure = chars[2].text
     try:
         application_chest = chars[3].text
+    except Exception as _ex:
+        application_chest = None
+    try:
         application_back = chars[4].text
     except Exception as _ex:
-        print(_ex)
-        application_back = False
-        application_chest = False
+        application_back = None
         
     chars_name = {
         "name": name,
@@ -103,8 +105,6 @@ def pars_url_img(dict_position):#парс ссылки на главную ка�
         dict_img[artist] = {}
         for product in dict_position[artist]:
             if product != None:
-                # print(dict_position[artist])
-                print(artist, product)
                 soup = get_soup_from_selenium(dict_position[artist][product])
                 try:
                     href = soup.find(
@@ -114,7 +114,7 @@ def pars_url_img(dict_position):#парс ссылки на главную ка�
                         'meta', itemprop='image').get('content')
                 dict_img[artist][product] = href
             else:
-                dict_img[artist] = {None: None}
+                dict_img[artist] = {None:None}
                 
     return dict_img
                 
