@@ -2,10 +2,12 @@ import asyncio
 import logging
 from aiogram import Bot, Dispatcher, types
 from aiogram.filters.command import Command
-import pars_modul
 import config
 import sqlite3
+import data_base
+import time
 
+old = time.time()
 connect = sqlite3.connect('data.db')
 cursor = connect.cursor()
 
@@ -45,9 +47,16 @@ async def cmd_start(message: types.Message):
     await message.answer("Выбирите артиста", reply_markup=keyboard)
 
 
+async def timer_data(old):
+    new = time.time()
+    if new - old > 60*60*12:
+        data_base
+        old = time.time()
+
 @dp.message()
 async def button(message: types.Message):
     kb = []
+    await timer_data(old)
     if message.text in artist_dict: # проверяем есть ли введёный артист в словаре
         for position in data_dict: # перебираем все товары
             print(position)
@@ -72,7 +81,6 @@ async def button(message: types.Message):
                 application_chest = data_dict[message.text][6]
                 application_back = data_dict[message.text][7]
                 img = data_dict[message.text][8]
-                # message_text = <a href = 'https://example.com' style = 'display:none;' > кликните здесь < /a >
 
                 mes = f'Товар: <a href="{img}" style="display:none;">{product}</a>\nЦена: {price}руб.\n{type_product}\n{color}\n{structur}\n{application_chest}\n{application_back}'
                 while 'None' in mes:
@@ -85,6 +93,7 @@ async def button(message: types.Message):
         
 
 async def main():
+    await timer_data(old)
     await dp.start_polling(bot)
 
 if __name__ == "__main__":

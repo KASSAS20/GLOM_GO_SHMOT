@@ -3,6 +3,8 @@ import pars_modul as pars
 import pickle
 import os
 
+print('1234567890')
+
 file_path = "data.db"
 try:
     os.remove(file_path)
