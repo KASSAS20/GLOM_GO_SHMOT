@@ -1,6 +1,17 @@
 import sqlite3
 import pars_modul as pars
 import pickle
+import os
+
+file_path = "data.db"
+try:
+    os.remove(file_path)
+    print(f"Файл {file_path} успешно удален.")
+except FileNotFoundError:
+    print(f"Файл {file_path} не найден.")
+except Exception as e:
+    print(f"Произошла ошибка при удалении файла: {e}")
+
 
 connect_data = sqlite3.connect("data.db")
 data = connect_data.cursor()
@@ -22,12 +33,13 @@ url_artist_dict = pars.pars_url_arists()
 url_product_dict = pars.pars_url_product(url_artist_dict)
 img_dict = pars.pars_url_img(url_product_dict)
 
-for artist in url_artist_dict: 
-    url_artist = url_artist_dict[artist]#url_artist
-    for product in url_product_dict[artist]:#product
-        url_product = url_product_dict[artist][product]#url product
+for artist in url_artist_dict:
+    url_artist = url_artist_dict[artist]  # url_artist
+    for product in url_product_dict[artist]:  # product
+        url_product = url_product_dict[artist][product]  # url product
         if url_product != None:
-            info_product = pars.pars_from_card_product(url_product)#info product
+            info_product = pars.pars_from_card_product(
+                url_product)  # info product
             price = str(info_product['price'])
             types = str(info_product['types'])
             color = str(info_product['color'])
@@ -43,8 +55,9 @@ for artist in url_artist_dict:
             application_chest = None
             application_back = None
             url_img = None
-        
-        data.execute('''INSERT INTO parsing_data VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)''', (artist, url_artist, product, url_product, url_img, price, types, color, structure, application_chest, application_back))
+
+        data.execute('''INSERT INTO parsing_data VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)''', (artist, url_artist,
+                     product, url_product, url_img, price, types, color, structure, application_chest, application_back))
         connect_data.commit()
 
 connect_data.close()

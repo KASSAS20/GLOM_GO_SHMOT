@@ -87,16 +87,18 @@ def pars_from_card_product(url):  # сбор информации со стра�
         application_back = chars[4].text
     except Exception as _ex:
         application_back = None
-        
+    
     chars_name = {
-        "name": name,
-        'price': price,
-        'types': types,
-        'color': color,
-        'structure': structure,
-        'application_chest': application_chest,
-        'application_back': application_back,
-    }
+            'name': name,
+            'price': price,
+            'types': types,
+            'color': color,
+            'structure': structure,
+            'application_chest': application_chest,
+            'application_back': application_back
+        }
+
+    
     return chars_name
 
 def pars_url_img(dict_position):#парс ссылки на главную картинку карточек товаров
