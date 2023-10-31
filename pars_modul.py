@@ -1,6 +1,5 @@
 from bs4 import BeautifulSoup as bs
 import requests
-import selenium
 from selenium import webdriver
 from selenium.webdriver.firefox.options import Options
 from selenium.webdriver.support.ui import WebDriverWait
