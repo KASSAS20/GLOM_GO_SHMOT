@@ -1,13 +1,11 @@
 import asyncio
 import logging
 from aiogram import Bot, Dispatcher, types
-from aiogram.filters.command import Command
+from aiogram.filters import Command
 import config
 import sqlite3
-import data_base
-import time
 
-old = time.time()
+
 connect = sqlite3.connect('data.db')
 cursor = connect.cursor()
 
@@ -21,22 +19,15 @@ for i in data:
     if i[0] not in artist_dict:
         artist_dict[i[0]] = i[1]
 
-    data_dict[i[2]] = [i[0],i[3], i[5], i[6], i[7], i[8], i[9], i[10], i[4]]
+    data_dict[i[2]] = [i[0], i[3], i[5], i[6], i[7], i[8], i[9], i[10], i[4]]
 
 
-
-# dict_artist = pars_modul.pars_url_arists() # словарь {artist:url_artist}
-# dict_position = pars_modul.pars_url_product(dict_artist) # словарь {artist:{product:url_product}}
-# list_product = []  # список со всеми продуктами сайта
-# for artist in dict_artist:
-#     for product in dict_position[artist]:
-#         list_product.append(product)
-
-
-logging.basicConfig(level=logging.INFO)# Включаем логирование, чтобы не пропустить важные сообщения
+# Включаем логирование, чтобы не пропустить важные сообщения
+logging.basicConfig(level=logging.INFO)
 
 bot = Bot(token=config.TOKEN)
 dp = Dispatcher()
+
 
 @dp.message(Command("start"))
 async def cmd_start(message: types.Message):
@@ -47,32 +38,24 @@ async def cmd_start(message: types.Message):
     await message.answer("Выбирите артиста", reply_markup=keyboard)
 
 
-async def timer_data(old):
-    new = time.time()
-    if new - old > 60*60*12:
-        data_base
-        old = time.time()
-
 @dp.message()
 async def button(message: types.Message):
     kb = []
-    await timer_data(old)
-    if message.text in artist_dict: # проверяем есть ли введёный артист в словаре
-        for position in data_dict: # перебираем все товары
+    if message.text in artist_dict:  # проверяем есть ли введёный артист в словаре
+        for position in data_dict:  # перебираем все товары
             print(position)
             if position != None and data_dict[position][0] == message.text:
-                kb.append([types.KeyboardButton(text=position)])#создаём кнопку с именем товара
+                # создаём кнопку с именем товара
+                kb.append([types.KeyboardButton(text=position)])
         kb.append([types.KeyboardButton(text='Домой')])
         keyboard = types.ReplyKeyboardMarkup(keyboard=kb, resize_keyboard=True)
         await message.answer(f'Выбери шмот', reply_markup=keyboard)
-    
+
     elif message.text == 'Домой':
         await cmd_start(message)
 
-
     elif message.text in data_dict:
         for product in data_dict:
-            # print(data_dict[message.text])
             if product == message.text:
                 price = data_dict[message.text][2]
                 type_product = data_dict[message.text][3]
@@ -88,12 +71,9 @@ async def button(message: types.Message):
                 await message.answer(mes, parse_mode='HTML')
     else:
         await message.answer('Ты говоришь на непонятном мне языке')
-                    
-    
-        
+
 
 async def main():
-    await timer_data(old)
     await dp.start_polling(bot)
 
 if __name__ == "__main__":

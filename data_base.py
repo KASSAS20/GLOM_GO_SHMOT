@@ -1,9 +1,6 @@
 import sqlite3
 import pars_modul as pars
-import pickle
 import os
-
-print('1234567890')
 
 file_path = "data.db"
 try:
@@ -63,4 +60,3 @@ for artist in url_artist_dict:
         connect_data.commit()
 
 connect_data.close()
-# data.close()

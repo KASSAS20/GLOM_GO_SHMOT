@@ -6,6 +6,7 @@ from selenium.webdriver.firefox.options import Options
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
+
 def get_soup(url):  # получение html страницы через requests
     headers = {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36'}
@@ -22,7 +23,8 @@ def get_soup_from_selenium(url):  # получение html страницы ч�
     driver = webdriver.Firefox(options=option)
     wait = WebDriverWait(driver, 10)
     driver.get(url)
-    wait.until(EC.presence_of_element_located(('css selector', '#nav238128853 > div.t830__panel.t830__panel_bg.t830__panel_hover.t830__panel_open > div.t830__menu__content > div.t830__burger.t830__burger_mobile')))
+    wait.until(EC.presence_of_element_located(
+        ('css selector', '#nav238128853 > div.t830__panel.t830__panel_bg.t830__panel_hover.t830__panel_open > div.t830__menu__content > div.t830__burger.t830__burger_mobile')))
     html = driver.page_source
     soup = bs(html, 'lxml')
     driver.quit()
@@ -30,7 +32,7 @@ def get_soup_from_selenium(url):  # получение html страницы ч�
 
 
 # извлекает ссылки на артистов с главной страницы
-def pars_url_arists(soup = get_soup("https://glamgo.store/")):
+def pars_url_arists(soup=get_soup("https://glamgo.store/")):
     result = {}
     html_list_info_artist = soup.find(
         'li', class_='t229__list_item').find_all('li', class_="t-menusub__list-item t-name t-name_xs")
@@ -42,8 +44,8 @@ def pars_url_arists(soup = get_soup("https://glamgo.store/")):
     return result
 
 
-
-def pars_url_product(dict_artist_url):# сбор наименований и ссылок на товары с карточки артиста
+# сбор наименований и ссылок на товары с карточки артиста
+def pars_url_product(dict_artist_url):
     dict_position = {}
     for artist in dict_artist_url:
         url = f'https://glamgo.store{dict_artist_url[artist]}'
@@ -65,7 +67,6 @@ def pars_url_product(dict_artist_url):# сбор наименований и с�
 
 def pars_from_card_product(url):  # сбор информации со страницы товара
     soup = get_soup(url)
-    # soup = get_soup('https://glamgo.store')
     name = soup.find_all('div', class_='t-store__prod-popup__title-wrapper')
     price = soup.find_all(
         'div', class_='js-product-price js-store-prod-price-val t-store__prod-popup__price-value')
@@ -87,21 +88,21 @@ def pars_from_card_product(url):  # сбор информации со стра�
         application_back = chars[4].text
     except Exception as _ex:
         application_back = None
-    
-    chars_name = {
-            'name': name,
-            'price': price,
-            'types': types,
-            'color': color,
-            'structure': structure,
-            'application_chest': application_chest,
-            'application_back': application_back
-        }
 
-    
+    chars_name = {
+        'name': name,
+        'price': price,
+        'types': types,
+        'color': color,
+        'structure': structure,
+        'application_chest': application_chest,
+        'application_back': application_back
+    }
+
     return chars_name
 
-def pars_url_img(dict_position):#парс ссылки на главную картинку карточек товаров
+
+def pars_url_img(dict_position):  # парс ссылки на главную картинку карточек товаров
     dict_img = {}
     for artist in dict_position:
         dict_img[artist] = {}
@@ -110,18 +111,12 @@ def pars_url_img(dict_position):#парс ссылки на главную ка�
                 soup = get_soup_from_selenium(dict_position[artist][product])
                 try:
                     href = soup.find(
-                    'div', class_='t-slds__bgimg t-bgimg js-product-img loaded').get('data-original')
+                        'div', class_='t-slds__bgimg t-bgimg js-product-img loaded').get('data-original')
                 except AttributeError:
                     href = soup.find(
                         'meta', itemprop='image').get('content')
                 dict_img[artist][product] = href
             else:
-                dict_img[artist] = {None:None}
-                
-    return dict_img
-                
-            
-            
-        
-    
+                dict_img[artist] = {None: None}
 
+    return dict_img
